@@ -83,9 +83,10 @@ impl Replicate {
         matches!(self, Self::SeqOrdered | Self::SeqUnordered)
     }
 
-    pub fn is_replicate(&self) -> bool {
+    /* pub fn is_replicate(&self) -> bool {
         matches!(self, Self::Lit(_) | Self::Var(_))
-    }
+    } */
+   
 }
 
 #[derive(Debug, PartialEq, Clone)]
@@ -136,11 +137,12 @@ pub struct SparStream {
     pub external_vars: Vec<SparVar>,
 }
 
-impl SparStream {
+/* impl SparStream {
     pub fn is_external(&self, var: &SparVar) -> bool {
         self.external_vars.contains(var)
     }
 }
+*/
 
 impl TryFrom<&proc_macro::TokenStream> for SparStream {
     type Error = syn::Error;
