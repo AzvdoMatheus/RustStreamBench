@@ -17,17 +17,17 @@ fi
 
 LOG_FILE=benchmarks/log
 REPETITIONS=$(seq 1 1 | tr '\n' ' ')
-NTHREADS=$(seq 1 "$(nproc)" | tr '\n' ' ')
+NTHREADS=$(seq 1 "$(sysctl -n hw.logicalcpu)" | tr '\n' ' ')
 CHECKSUM_ERROR_MSG="!!!ERROR!!! Checksums failed to verify:"
 
 check_and_mkdir() {
 	if [ ! -d "$1" ]; then
-		mkdir -pv "$1" | tee --append $LOG_FILE
+		mkdir -pv "$1" | tee -a $LOG_FILE
 	fi
 }
 
 log() {
-	printf "%s - %s\n" "$(date '+%Y-%m-%d|%H:%M:%S:%N')" "$1" | tee --append $LOG_FILE
+	printf "%s - %s\n" "$(date '+%Y-%m-%d|%H:%M:%S:%N')" "$1" | tee -a $LOG_FILE
 }
 
 build_app() {
