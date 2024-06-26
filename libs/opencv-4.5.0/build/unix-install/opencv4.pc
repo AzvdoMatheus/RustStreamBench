@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/opencv4
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 4.5.0
+Libs: -L${exec_prefix}/lib -lopencv_dnn -lopencv_gapi -lopencv_highgui -lopencv_ml -lopencv_stitching -lopencv_video -lopencv_videoio -lopencv_imgcodecs -lopencv_face -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core
+Libs.private: 
+Cflags: -I${includedir}

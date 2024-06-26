@@ -1,0 +1,14 @@
+prefix=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build
+exec_prefix=${prefix}
+libdir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/lib
+includedir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.8.100
+Requires: 
+Requires.private: libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}

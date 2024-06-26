@@ -1,0 +1,259 @@
+#use_cache "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache"
+#do_unpack "v0.1.1f.zip" "b624b995ec9c439cbc2e9e6ee940d3a2" "https://github.com/opencv/ade/archive/v0.1.1f.zip" "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/3rdparty/ade"
+#cmake_download "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip" "https://github.com/opencv/ade/archive/v0.1.1f.zip"
+#try 1
+#   Trying 20.201.28.151:443...
+# Connected to github.com (20.201.28.151) port 443 (#0)
+# ALPN: offers h2
+# ALPN: offers http/1.1
+# (304) (OUT), TLS handshake, Client hello (1):
+# [315 bytes data]
+# (304) (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# (304) (IN), TLS handshake, Unknown (8):
+# [19 bytes data]
+# (304) (IN), TLS handshake, Certificate (11):
+# [3137 bytes data]
+# (304) (IN), TLS handshake, CERT verify (15):
+# [79 bytes data]
+# (304) (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# (304) (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256
+# ALPN: server accepted h2
+# Server certificate:
+#  subject: CN=github.com
+#  start date: Mar  7 00:00:00 2024 GMT
+#  expire date: Mar  7 23:59:59 2025 GMT
+#  subjectAltName: host "github.com" matched cert's "github.com"
+#  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+#  SSL certificate verify ok.
+# Using HTTP2, server supports multiplexing
+# Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+# h2h3 [:method: GET]
+# h2h3 [:path: /opencv/ade/archive/v0.1.1f.zip]
+# h2h3 [:scheme: https]
+# h2h3 [:authority: github.com]
+# h2h3 [user-agent: curl/7.87.0]
+# h2h3 [accept: */*]
+# Using Stream ID: 1 (easy handle 0x13a282600)
+# GET /opencv/ade/archive/v0.1.1f.zip HTTP/2
+# Host: github.com
+# user-agent: curl/7.87.0
+# accept: */*
+# 
+# HTTP/2 302 
+# server: GitHub.com
+# date: Mon, 29 Apr 2024 19:02:49 GMT
+# content-type: text/html; charset=utf-8
+# vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+# location: https://codeload.github.com/opencv/ade/zip/refs/tags/v0.1.1f
+# cache-control: max-age=0, private
+# strict-transport-security: max-age=31536000; includeSubdomains; preload
+# x-frame-options: deny
+# x-content-type-options: nosniff
+# x-xss-protection: 0
+# referrer-policy: no-referrer-when-downgrade
+# content-security-policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+# content-length: 0
+# x-github-request-id: D8C4:E99B8:BC46E7:CDEE32:662FEED9
+# 
+# [0 bytes data]
+# Connection #0 to host github.com left intact
+# Issue another request to this URL: 'https://codeload.github.com/opencv/ade/zip/refs/tags/v0.1.1f'
+#   Trying 20.201.28.149:443...
+# Connected to codeload.github.com (20.201.28.149) port 443 (#1)
+# ALPN: offers h2
+# ALPN: offers http/1.1
+# (304) (OUT), TLS handshake, Client hello (1):
+# [324 bytes data]
+# (304) (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# (304) (IN), TLS handshake, Unknown (8):
+# [19 bytes data]
+# (304) (IN), TLS handshake, Certificate (11):
+# [3136 bytes data]
+# (304) (IN), TLS handshake, CERT verify (15):
+# [79 bytes data]
+# (304) (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# (304) (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256
+# ALPN: server accepted h2
+# Server certificate:
+#  subject: CN=*.github.com
+#  start date: Mar  7 00:00:00 2024 GMT
+#  expire date: Mar  7 23:59:59 2025 GMT
+#  subjectAltName: host "codeload.github.com" matched cert's "*.github.com"
+#  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+#  SSL certificate verify ok.
+# Using HTTP2, server supports multiplexing
+# Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+# h2h3 [:method: GET]
+# h2h3 [:path: /opencv/ade/zip/refs/tags/v0.1.1f]
+# h2h3 [:scheme: https]
+# h2h3 [:authority: codeload.github.com]
+# h2h3 [user-agent: curl/7.87.0]
+# h2h3 [accept: */*]
+# Using Stream ID: 1 (easy handle 0x13a282600)
+# GET /opencv/ade/zip/refs/tags/v0.1.1f HTTP/2
+# Host: codeload.github.com
+# user-agent: curl/7.87.0
+# accept: */*
+# 
+# HTTP/2 200 
+# access-control-allow-origin: https://render.githubusercontent.com
+# content-disposition: attachment; filename=ade-0.1.1f.zip
+# content-length: 166594
+# content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# content-type: application/zip
+# cross-origin-resource-policy: cross-origin
+# etag: "d6c62c0c3b4dc6059be5fd41ab24d5e0b5d7968e0563d1c2f0e56f27d0f4a57f"
+# strict-transport-security: max-age=31536000
+# vary: Authorization,Accept-Encoding,Origin
+# x-content-type-options: nosniff
+# x-frame-options: deny
+# x-xss-protection: 1; mode=block
+# date: Mon, 29 Apr 2024 19:02:50 GMT
+# x-github-request-id: D8C6:330F87:845D1:199AFD:662FEED9
+# 
+# [832 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [482 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [633 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [156 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [285 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [1323 bytes data]
+# [1361 bytes data]
+# [1370 bytes data]
+# [1370 bytes data]
+# [281 bytes data]
+# Connection #1 to host codeload.github.com left intact
+# 
+
+#check_md5 "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#mkdir "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/3rdparty/ade"
+#unpack "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/3rdparty/ade" "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#do_copy "face_landmark_model.dat" "7505c44ca4eb54b4ab1e4777cb96ac05" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat" "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/share/opencv4/testdata/cv/face/"
+#missing "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/share/opencv4/testdata/cv/face//face_landmark_model.dat"
+#cmake_download "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat"
+#try 1
+#check_md5 "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat"
+#copy "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/build/share/opencv4/testdata/cv/face//face_landmark_model.dat" "/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat"

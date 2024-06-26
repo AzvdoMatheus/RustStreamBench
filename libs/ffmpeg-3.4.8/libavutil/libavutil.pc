@@ -1,0 +1,14 @@
+prefix=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build
+exec_prefix=${prefix}
+libdir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/lib
+includedir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

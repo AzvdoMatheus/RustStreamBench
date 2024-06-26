@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPILE_THREADS=$(nproc)
+COMPILE_THREADS=$(sysctl -n hw.logicalcpu)
 set -e
 
 # FFmpeg installation

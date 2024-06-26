@@ -1,0 +1,14 @@
+prefix=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build
+exec_prefix=${prefix}
+libdir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/lib
+includedir=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: 
+Requires.private: libswresample >= 2.9.100, libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -framework OpenGL -framework OpenGL -framework Foundation -framework CoreVideo -framework CoreMedia -framework CoreFoundation -framework VideoToolbox -framework CoreMedia -framework CoreVideo -framework VideoDecodeAcceleration -liconv -L/opt/homebrew/Cellar/libxcb/1.17.0/lib -lxcb -L/opt/homebrew/Cellar/libxcb/1.17.0/lib -lxcb-shm -L/opt/homebrew/Cellar/libxcb/1.17.0/lib -lxcb-xfixes -L/opt/homebrew/Cellar/libxcb/1.17.0/lib -lxcb-shape -Wl,-framework,CoreFoundation -Wl,-framework,Security -lm -lbz2 -lz -pthread -pthread -framework CoreServices -framework CoreGraphics -framework VideoToolbox -framework CoreImage -framework AVFoundation -framework AudioToolbox -framework AppKit
+Cflags: -I${includedir}

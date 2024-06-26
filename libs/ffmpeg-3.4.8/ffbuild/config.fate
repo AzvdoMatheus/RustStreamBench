@@ -1,0 +1,1 @@
+config:aarch64::generic:darwin:Apple clang version 14.0.0 (clang-1400.0.29.202):--prefix=/Users/matheusazevedo/RUST-SPAR/RustStreamBench/RustStreamBench/libs/ffmpeg-3.4.8/build --enable-nonfree --enable-pic --enable-shared
